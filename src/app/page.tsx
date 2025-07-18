@@ -132,13 +132,13 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#131f2f] text-gray-800">
+    <div className="min-h-screen h-screen bg-gradient-to-b from-[#fe9b62] to-[#e66f5c] text-gray-800">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 bg-[#102e4d77] backdrop-blur-md z-50">
+      <nav className="fixed top-0 left-0 right-0 bg-[#3f4f6e22] backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
-              <h1 className="text-xl font-bold bg-gradient-to-br to-[#e66f5c] from-[#fe9b62] bg-clip-text text-transparent">
+              <h1 className="text-xl font-bold text-black">
                 Priyanshu Kumar Jha
               </h1>
             </div>
@@ -150,10 +150,10 @@ export default function Portfolio() {
                   <button
                     key={item.id}
                     onClick={() => scrollToSection(item.id)}
-                    className={`px-3 py-2 rounded-md text-sm font-medium transition-colors text-[#e66f5c] ${
+                    className={`px-3 py-2 rounded-md text-sm font-medium transition-colors  ${
                       activeSection === item.id
-                        ? "bg-primary/10"
-                        : "hover:text-[#fe9b62] hover:bg-primary/50"
+                        ? "bg-black/15 text-white"
+                        : "hover:text-white hover:bg-black/5"
                     }`}
                   >
                     {item.label}
@@ -162,7 +162,7 @@ export default function Portfolio() {
                 <Button
                   variant="outline"
                   size="sm"
-                  className="ml-4 border-primary text-[#e66f5c] hover:bg-black hover:text-[#fe9b62] bg-transparent"
+                  className="ml-4 border-transparent hover:border-[#2a3750] text-black hover:bg-black/5 hover:text-white bg-transparent"
                   onClick={() =>
                     window.open("https://example.com/resume.pdf", "_blank")
                   }
@@ -223,71 +223,49 @@ export default function Portfolio() {
       </nav>
 
       {/* About Me Section */}
-      <section id="about" className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+      <section id="about" className="pt-24 h-screen pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <div className="relative">
                 <img
                   src="heroPhoto.png"
-                  alt="John Developer"
+                  alt="heroPhoto.png"
                   className="w-80 h-80 rounded-4xl object-contain mx-auto lg:mx-0 shadow-2xl"
                 />
-                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-secondary rounded-full flex items-center justify-center shadow-lg">
-                  <Code className="w-12 h-12 text-dark" />
-                </div>
               </div>
             </div>
 
             <div className="animate-slide-in-left">
-              <h2 className="text-4xl lg:text-5xl font-bold text-[#e66f5c] mb-6">
+              <h2 className="text-4xl lg:text-5xl font-bold text-[#131f2f] mb-6">
                 Hi, I'm{" "}
-                <span className="text-[#fe9b62]">Priyanshu Kumar Jha</span>
+                <span className="text-[#3f4f6e]">Priyanshu Kumar Jha</span>
               </h2>
-              <p className="text-lg text-[#c0c3d1] mb-6 leading-relaxed">
+              <p className="text-lg text-[#f7f8fa] mb-6 leading-relaxed">
                 <br />
                 Full-stack by skill.{" "}
-                <span className="bg-gradient-to-r from-[#e66f5c] to-[#fe9b62] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#1d2a3a] to-[#3f4f6e] bg-clip-text text-transparent">
                   Precise{" "}
                 </span>
                 by instinct.
               </p>
-              <p className="text-lg text-[#c0c3d1] mb-8 leading-relaxed">
+              <p className="text-lg text-[#f7f8fa] mb-8 leading-relaxed">
                 Outside of coding, I spend time deepening my understanding of
                 technologies like C++ and the MERN stack, contributing to
                 open-source, and staying active in the developer community
                 through shared learning.
               </p>
 
-              <div className="flex flex-wrap gap-3 mb-8">
-                {[
-                  "React",
-                  "Node.js",
-                  "TypeScript",
-                  "MongoDB",
-                  "PostgreSQL",
-                ].map((tech) => (
-                  <Badge
-                    key={tech}
-                    variant="secondary"
-                    className="px-3 py-1 bg-black text-[#e66f5c] text-sm"
-                  >
-                    {tech}
-                  </Badge>
-                ))}
-              </div>
-
               <div className="flex gap-4">
                 <Button
                   onClick={() => scrollToSection("contact")}
-                  className="bg-primary hover:bg-primary/90"
+                  className="bg-primary hover:text-[#fe9b62] hover:bg-[#131f2f] hover:shadow-[0px_0px_10px_rgba(0,0,0,0.4)] transition-all duration-200"
                 >
                   Get In Touch
                 </Button>
                 <Button
-                  variant="outline"
                   onClick={() => scrollToSection("projects")}
-                  className="border-primary text-primary hover:bg-primary hover:text-white"
+                  className="bg-primary text-white hover:text-[#fe9b62] hover:bg-[#131f2f] hover:shadow-[0px_0px_10px_rgba(0,0,0,0.4)] transition-all duration-200"
                 >
                   View My Work
                 </Button>
@@ -298,35 +276,42 @@ export default function Portfolio() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section
+        id="skills"
+        className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#e66f5c] to-[#695c7b]"
+      >
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-dark mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-[#f7f8fa] mb-4">
               Skills & Technologies
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-[#c0c3d1] max-w-2xl mx-auto">
               Here are the technologies and tools I work with to bring ideas to
               life
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
+            <Card className="group bg-gradient-to-t from-[#e66f5c] to-[#695c7b] border border-[#2a3750] hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardHeader className="text-center">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-                  <Code className="w-6 h-6 text-primary" />
+                <div className="w-12 h-12 bg-[#e66f5c] rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-[#fe9b62] transition-colors">
+                  <Code className="w-6 h-6 text-[#f7f8fa]" />
                 </div>
-                <CardTitle className="text-primary">Frontend</CardTitle>
+                <CardTitle className="text-[#f7f8fa]">Frontend</CardTitle>
               </CardHeader>
+
               <CardContent>
                 <div className="space-y-2">
                   {skills.frontend.map((skill) => (
                     <div
                       key={skill.name}
-                      className="flex justify-between items-center"
+                      className="flex justify-between items-center text-[#c0c3d1]"
                     >
                       <span className="text-sm font-medium">{skill.name}</span>
-                      <Badge variant="outline" className="text-xs">
+                      <Badge
+                        variant="outline"
+                        className="text-xs border-[#2a3750] text-[#695c7b]"
+                      >
                         {skill.level}
                       </Badge>
                     </div>
@@ -335,22 +320,26 @@ export default function Portfolio() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <Card className="group bg-gradient-to-t from-[#e66f5c] to-[#695c7b] border border-[#2a3750] hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardHeader className="text-center">
-                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/20 transition-colors">
-                  <Server className="w-6 h-6 text-accent" />
+                <div className="w-12 h-12 bg-[#e66f5c] rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-[#fe9b62] transition-colors">
+                  <Server className="w-6 h-6 text-[#f7f8fa]" />
                 </div>
-                <CardTitle className="text-accent">Backend</CardTitle>
+                <CardTitle className="text-[#f7f8fa]">Backend</CardTitle>
               </CardHeader>
+
               <CardContent>
                 <div className="space-y-2">
                   {skills.backend.map((skill) => (
                     <div
                       key={skill.name}
-                      className="flex justify-between items-center"
+                      className="flex justify-between items-center text-[#c0c3d1]"
                     >
                       <span className="text-sm font-medium">{skill.name}</span>
-                      <Badge variant="outline" className="text-xs">
+                      <Badge
+                        variant="outline"
+                        className="text-xs border-[#2a3750] text-[#695c7b]"
+                      >
                         {skill.level}
                       </Badge>
                     </div>
@@ -359,22 +348,26 @@ export default function Portfolio() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <Card className="group bg-gradient-to-t from-[#e66f5c] to-[#695c7b] border border-[#2a3750] hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardHeader className="text-center">
-                <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary/20 transition-colors">
-                  <Database className="w-6 h-6 text-secondary" />
+                <div className="w-12 h-12 bg-[#e66f5c] rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-[#fe9b62] transition-colors">
+                  <Database className="w-6 h-6 text-[#f7f8fa]" />
                 </div>
-                <CardTitle className="text-secondary">Database</CardTitle>
+                <CardTitle className="text-[#f7f8fa]">Database</CardTitle>
               </CardHeader>
+
               <CardContent>
                 <div className="space-y-2">
                   {skills.database.map((skill) => (
                     <div
                       key={skill.name}
-                      className="flex justify-between items-center"
+                      className="flex justify-between items-center text-[#c0c3d1]"
                     >
                       <span className="text-sm font-medium">{skill.name}</span>
-                      <Badge variant="outline" className="text-xs">
+                      <Badge
+                        variant="outline"
+                        className="text-xs border-[#2a3750] text-[#695c7b]"
+                      >
                         {skill.level}
                       </Badge>
                     </div>
@@ -383,22 +376,26 @@ export default function Portfolio() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <Card className="group bg-gradient-to-t from-[#e66f5c] to-[#695c7b] border border-[#2a3750] hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardHeader className="text-center">
-                <div className="w-12 h-12 bg-muted/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-muted/20 transition-colors">
-                  <Wrench className="w-6 h-6 text-muted" />
+                <div className="w-12 h-12 bg-[#f29b4f] rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-[#fe9b62] transition-colors">
+                  <Wrench className="w-6 h-6 text-[#f7f8fa]" />
                 </div>
-                <CardTitle className="text-muted">Tools</CardTitle>
+                <CardTitle className="text-[#f7f8fa]">Tools</CardTitle>
               </CardHeader>
+
               <CardContent>
                 <div className="space-y-2">
                   {skills.tools.map((skill) => (
                     <div
                       key={skill.name}
-                      className="flex justify-between items-center"
+                      className="flex justify-between items-center text-[#c0c3d1]"
                     >
                       <span className="text-sm font-medium">{skill.name}</span>
-                      <Badge variant="outline" className="text-xs">
+                      <Badge
+                        variant="outline"
+                        className="text-xs border-[#2a3750] text-[#695c7b]"
+                      >
                         {skill.level}
                       </Badge>
                     </div>
@@ -411,7 +408,10 @@ export default function Portfolio() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-16 px-4 sm:px-6 lg:px-8">
+      <section
+        id="projects"
+        className=" bg-gradient-to-b from-[#695c7b] to-[#3f4f6e] py-16 px-4 sm:px-6 lg:px-8"
+      >
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-dark mb-4">
@@ -483,7 +483,10 @@ export default function Portfolio() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section
+        id="contact"
+        className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b to-[#102e4d] from-[#3f4f6e]"
+      >
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-dark mb-4">
@@ -629,7 +632,7 @@ export default function Portfolio() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-dark text-white py-8 px-4 sm:px-6 lg:px-8">
+      <footer className="bg-gradient-to-b from-[#102e4d] to-[#131f2f] text-white py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-gray-400">
             © 2024 John Developer. Built with Next.js and Tailwind CSS.
