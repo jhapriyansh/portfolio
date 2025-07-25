@@ -11,7 +11,7 @@ export default function ResumeSection() {
           Download my resume to learn more about my experience and
           qualifications.
         </p>
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+        <a href="/resume.pdf" download>
           <Button
             size="lg"
             variant="outline"
