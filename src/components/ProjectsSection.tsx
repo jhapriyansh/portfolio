@@ -33,7 +33,23 @@ const projects = [
       "RESTful API for a blogging platform with user authentication, post management, comments and likes.",
     tech: ["Node.js", "Express.js", "MongoDB"],
     github: "https://github.com/jhapriyansh/blogify",
-    live: "#",
+    live: "no deployment yet",
+  },
+  {
+    title: "React Hangman",
+    description:
+      "A classic Hangman word-guessing game built with React. Features dynamic word generation, visual hangman drawing, and interactive keyboard input.",
+    tech: ["React.js", "TypeScript", "CSS", "vite"],
+    github: "https://github.com/jhapriyansh/react-hangman",
+    live: "https://react-hangman-delta.vercel.app/",
+  },
+  {
+    title: "Portfolio",
+    description:
+      "A modern and responsive developer portfolio built with Next.js and Tailwind CSS along with shadcn/ui components. Showcases projects, skills, and contact details with smooth animations and a super clean UI.",
+    tech: ["Next.js", "Tailwind CSS", "shadcn/ui", "TypeScript"],
+    github: "https://github.com/jhapriyansh/portfolio",
+    live: "https://priyanshujha-portfolio.vercel.app/",
   },
 ];
 

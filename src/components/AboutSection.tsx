@@ -20,9 +20,11 @@ export default function AboutSection() {
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 When I'm not coding, you'll find me exploring new technologies,
-                contributing to open source projects, or sharing knowledge with
-                the developer community.
+                diving deep into Operating System internals, contributing to
+                open source projects, or sharing knowledge with the developer
+                community.
               </p>
+
               <div className="flex gap-4">
                 <a href="https://github.com/jhapriyansh" target="_blank">
                   <Button
