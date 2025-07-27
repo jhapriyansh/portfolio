@@ -13,6 +13,7 @@ import { Github, ExternalLink } from "lucide-react";
 const projects = [
   {
     title: "Todo Application",
+    type: "fs",
     description:
       "Full-stack todo application with user authentication, task management, and real-time updates.",
     tech: ["React.js", "MongoDB", "Node.js", "Bootstrap", "Express.js"],
@@ -21,6 +22,7 @@ const projects = [
   },
   {
     title: "E-Commerce Platform",
+    type: "fe",
     description:
       "Lightweight, responsive e-commerce app built with React.js and LocalStorage for cart and session management—no backend needed.",
     tech: ["React.js"],
@@ -29,6 +31,7 @@ const projects = [
   },
   {
     title: "Blogify Backend",
+    type: "be",
     description:
       "RESTful API for a blogging platform with user authentication, post management, comments and likes.",
     tech: ["Node.js", "Express.js", "MongoDB"],
@@ -37,6 +40,7 @@ const projects = [
   },
   {
     title: "React Hangman",
+    type: "fe",
     description:
       "A classic Hangman word-guessing game built with React. Features dynamic word generation, visual hangman drawing, and interactive keyboard input.",
     tech: ["React.js", "TypeScript", "CSS", "vite"],
@@ -45,6 +49,7 @@ const projects = [
   },
   {
     title: "Portfolio",
+    type: "fe",
     description:
       "A modern and responsive developer portfolio built with Next.js and Tailwind CSS along with shadcn/ui components. Showcases projects, skills, and contact details with smooth animations and a super clean UI.",
     tech: ["Next.js", "Tailwind CSS", "shadcn/ui", "TypeScript"],
@@ -93,16 +98,18 @@ export default function ProjectsSection() {
                       Code
                     </Button>
                   </a>
-                  <a href={project.live} target="_blank">
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="hover:bg-gray-900 bg-gray-50 hover:text-white transition-colors"
-                    >
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Live
-                    </Button>
-                  </a>
+                  {project.type === "fe" && (
+                    <a href={project.live} target="_blank">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="hover:bg-gray-900 bg-gray-50 hover:text-white transition-colors"
+                      >
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        Live
+                      </Button>
+                    </a>
+                  )}
                 </div>
               </CardContent>
             </Card>
