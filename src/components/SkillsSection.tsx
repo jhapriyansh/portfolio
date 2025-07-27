@@ -5,11 +5,6 @@ import { Code, Database, Globe, Server } from "lucide-react";
 
 const skills = [
   {
-    category: "Programming Languages",
-    icon: <Globe className="w-4 h-4" />,
-    items: ["JavaScript", "Python", "Java", "C++", "C"],
-  },
-  {
     category: "Frontend",
     icon: <Globe className="w-4 h-4" />,
     items: [
@@ -32,7 +27,6 @@ const skills = [
     items: [
       "MySQL",
       "MongoDB",
-      "Cloudinary",
       "Supabase",
       "Firebase",
       "PostgreSQL",
