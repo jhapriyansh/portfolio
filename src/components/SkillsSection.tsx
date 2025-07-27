@@ -1,18 +1,25 @@
 "use client";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Code, Database, Globe, Server } from "lucide-react";
 
 const skills = [
   {
+    category: "Programming Languages",
+    icon: <Globe className="w-4 h-4" />,
+    items: ["JavaScript", "Python", "Java", "C++", "C"],
+  },
+  {
     category: "Frontend",
     icon: <Globe className="w-4 h-4" />,
-    items: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Redux"],
+    items: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Redux",
+      "Figma",
+    ],
   },
   {
     category: "Backend",
@@ -22,12 +29,19 @@ const skills = [
   {
     category: "Database",
     icon: <Database className="w-4 h-4" />,
-    items: ["MySQL", "MongoDB", "Cloudinary", "Supabase"],
+    items: [
+      "MySQL",
+      "MongoDB",
+      "Cloudinary",
+      "Supabase",
+      "Firebase",
+      "PostgreSQL",
+    ],
   },
   {
     category: "Tools",
     icon: <Code className="w-4 h-4" />,
-    items: ["GitHub", "Docker", "Vercel", "Postman"],
+    items: ["GitHub", "Docker", "Vercel", "Postman", "VS Code", "Linux"],
   },
 ];
 
@@ -42,7 +56,9 @@ export default function SkillsSection() {
           {skills.map((skill, index) => (
             <Card
               key={skill.category}
-              className={`border-gray-200 hover:shadow-lg transition-all duration-300 hover:translate-y-[-4px] delay-${index * 100}`}
+              className={`border-gray-200 hover:shadow-lg transition-all duration-300 hover:translate-y-[-4px] delay-${
+                index * 100
+              }`}
             >
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center gap-2 text-lg">

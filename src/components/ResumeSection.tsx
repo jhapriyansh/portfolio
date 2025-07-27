@@ -12,7 +12,7 @@ export default function ResumeSection() {
           qualifications.
         </p>
         <a
-          href="https://drive.google.com/file/d/1rQyCuCVt5KC78Ozi2hoTI1vLVq6lCJ6G/view?usp=sharing"
+          href="https://drive.google.com/file/d/1q2cBvnABUnI8iJE9vu7Xtb_oeWrdNSmd/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >

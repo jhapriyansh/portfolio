@@ -37,7 +37,7 @@ export default function AboutSection() {
                   </Button>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/priyanshu-kumar-jha-b05407231/"
+                  href="https://www.linkedin.com/in/priyanshu-kumarjha/"
                   target="_blank"
                 >
                   <Button

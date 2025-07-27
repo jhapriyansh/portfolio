@@ -22,7 +22,7 @@ export default function Footer() {
                 <Github className="w-4 h-4" />
               </Button>
             </a>
-            <a href="https://www.linkedin.com/in/priyanshu-kumar-jha-b05407231/">
+            <a href="https://www.linkedin.com/in/priyanshu-kumarjha/">
               <Button
                 variant="ghost"
                 size="sm"
