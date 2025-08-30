@@ -12,6 +12,24 @@ import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
+    title: "Social Media App",
+    type: "fs",
+    description:
+      "A full-stack social media application featuring user authentication, profiles, post creation with image uploads, likes, comments, and a real-time feed.",
+    tech: [
+      "React.js",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Cloudinary",
+    ],
+    github: "https://github.com/jhapriyansh/socialmedia-app",
+    live: "#", // Add your live deployment link here
+  },
+  {
     title: "Todo Application",
     type: "fs",
     description:
@@ -30,11 +48,11 @@ const projects = [
     live: "https://nscc-web-project.vercel.app/",
   },
   {
-    title: "Blogify Backend",
-    type: "be",
+    title: "Blogify",
+    type: "fs",
     description:
-      "RESTful API for a blogging platform with user authentication, post management, comments and likes.",
-    tech: ["Node.js", "Express.js", "MongoDB"],
+      "Full-stack blogging platform with a React front end and a RESTful API. Features user authentication, post management, comments, and likes.",
+    tech: ["React.js", "Vite", "Bootstrap", "Node.js", "Express.js", "MongoDB"],
     github: "https://github.com/jhapriyansh/blogify",
     live: "no deployment yet",
   },
