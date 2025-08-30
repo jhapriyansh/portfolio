@@ -15,17 +15,8 @@ const projects = [
     title: "Social Media App",
     type: "fs",
     description:
-      "A full-stack social media application featuring user authentication, profiles, post creation with image uploads, likes, comments, and a real-time feed.",
-    tech: [
-      "React.js",
-      "Redux Toolkit",
-      "Tailwind CSS",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "JWT",
-      "Cloudinary",
-    ],
+      "A full-stack social media application featuring user authentication, profiles, post creation, a real-time feed, and real-time direct messaging (DMs).", // Changed
+    tech: ["React.js", "Redux Toolkit", "Tailwind CSS", "Node.js", "Express.js", "Socket.IO", "MongoDB", "JWT", "Cloudinary"], // Changed
     github: "https://github.com/jhapriyansh/socialmedia-app",
     live: "#", // Add your live deployment link here
   },
