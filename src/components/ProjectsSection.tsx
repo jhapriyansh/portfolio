@@ -16,7 +16,17 @@ const projects = [
     type: "fs",
     description:
       "A full-stack social media application featuring user authentication, profiles, post creation, a real-time feed, and real-time direct messaging (DMs).", // Changed
-    tech: ["React.js", "Redux Toolkit", "Tailwind CSS", "Node.js", "Express.js", "Socket.IO", "MongoDB", "JWT", "Cloudinary"], // Changed
+    tech: [
+      "React.js",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "Socket.IO",
+      "MongoDB",
+      "JWT",
+      "Cloudinary",
+    ], // Changed
     github: "https://github.com/jhapriyansh/socialmedia-app",
     live: "#", // Add your live deployment link here
   },
@@ -28,15 +38,6 @@ const projects = [
     tech: ["React.js", "MongoDB", "Node.js", "Bootstrap", "Express.js"],
     github: "https://github.com/jhapriyansh/todo-mern-app",
     live: "#",
-  },
-  {
-    title: "E-Commerce Platform",
-    type: "fe",
-    description:
-      "Lightweight, responsive e-commerce app built with React.js and LocalStorage for cart and session management—no backend needed.",
-    tech: ["React.js"],
-    github: "https://github.com/jhapriyansh/e-comm-fe",
-    live: "https://nscc-web-project.vercel.app/",
   },
   {
     title: "Blogify",
@@ -64,6 +65,25 @@ const projects = [
     tech: ["Next.js", "Tailwind CSS", "shadcn/ui", "TypeScript"],
     github: "https://github.com/jhapriyansh/portfolio",
     live: "https://priyanshujha-portfolio.vercel.app/",
+  },
+  {
+    title: "StockSphere (Inventory & Billing System)",
+    type: "fs",
+    description:
+      "A full-stack inventory and billing management system with role-based workflows (Admin & Staff), real-time billing counter updates via WebSockets, and a QR-based mobile scanning workflow (PoC).",
+    tech: [
+      "React.js",
+      "Vite",
+      "CSS Modules",
+      "Context API",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Socket.IO",
+    ],
+    github: "https://github.com/jhapriyansh/stocksphere-showcase",
+    live: "#",
   },
 ];
 
