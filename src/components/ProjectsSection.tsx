@@ -82,7 +82,7 @@ const projects = [
       "JWT",
       "Socket.IO",
     ],
-    github: "https://github.com/jhapriyansh/stocksphere-showcase",
+    github: "https://github.com/jhapriyansh/stocksphereims",
     live: "#",
   },
 ];
