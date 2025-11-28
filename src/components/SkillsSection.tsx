@@ -1,41 +1,44 @@
 "use client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Code, Database, Globe, Server } from "lucide-react";
+import { Code, Database, Globe, Server, Cpu, Boxes } from "lucide-react";
 
 const skills = [
   {
+    category: "Languages",
+    icon: <Code className="w-4 h-4" />,
+    items: ["C", "C++", "JavaScript", "TypeScript", "Python"],
+  },
+  {
     category: "Frontend",
     icon: <Globe className="w-4 h-4" />,
-    items: [
-      "React.js",
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Redux",
-      "Figma",
-    ],
+    items: ["React", "Next.js", "Vite", "Tailwind CSS", "Redux Toolkit"],
   },
   {
     category: "Backend",
     icon: <Server className="w-4 h-4" />,
-    items: ["Node.js", "Express.js"],
+    items: ["Node.js", "Express.js", "WebSockets (Socket.IO)", "REST APIs"],
   },
   {
-    category: "Database",
+    category: "Databases",
     icon: <Database className="w-4 h-4" />,
     items: [
+      "MongoDB (Mongoose)",
       "MySQL",
-      "MongoDB",
       "Supabase",
       "Firebase",
-      "PostgreSQL",
+      "Cloudinary",
     ],
   },
   {
+    category: "Systems & Performance",
+    icon: <Cpu className="w-4 h-4" />,
+    items: ["WebAssembly (WASM)", "Emscripten", "PThreads"],
+  },
+  {
     category: "Tools",
-    icon: <Code className="w-4 h-4" />,
-    items: ["GitHub", "Docker", "Vercel", "Postman", "VS Code", "Linux"],
+    icon: <Boxes className="w-4 h-4" />,
+    items: ["Git", "Docker", "Postman", "Nginx", "Linux", "Vercel"],
   },
 ];
 
@@ -46,7 +49,7 @@ export default function SkillsSection() {
         <h2 className="text-3xl md:text-4xl font-light mb-12 text-center">
           Skills
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skills.map((skill, index) => (
             <Card
               key={skill.category}
