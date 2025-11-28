@@ -12,78 +12,141 @@ import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "Social Media App",
+    title: "Social Media App (Frontend)",
     type: "fs",
     description:
-      "A full-stack social media application featuring user authentication, profiles, post creation, a real-time feed, and real-time direct messaging (DMs).", // Changed
+      "Responsive social media frontend featuring authentication, profiles, a real-time chat system, posts, comments, likes, and activity feeds. Built with modern React tooling and optimized client-side performance.",
     tech: [
       "React.js",
-      "Redux Toolkit",
+      "Vite",
       "Tailwind CSS",
-      "Node.js",
-      "Express.js",
+      "Axios",
+      "React Router",
       "Socket.IO",
-      "MongoDB",
-      "JWT",
-      "Cloudinary",
-    ], // Changed
+      "Material UI Icons",
+      "React Toastify",
+    ],
     github: "https://github.com/jhapriyansh/socialmedia-app",
-    live: "#", // Add your live deployment link here
-  },
-  {
-    title: "Todo Application",
-    type: "fs",
-    description:
-      "Full-stack todo application with user authentication, task management, and real-time updates.",
-    tech: ["React.js", "MongoDB", "Node.js", "Bootstrap", "Express.js"],
-    github: "https://github.com/jhapriyansh/todo-mern-app",
     live: "#",
   },
+
+  {
+    title: "Social Media App (Backend)",
+    type: "be",
+    description:
+      "Scalable backend powering a full social media platform with JWT auth, user profiles, posts, comments, notifications, and real-time messaging. Includes media uploads via Cloudinary and websocket-based chat.",
+    tech: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "Socket.IO",
+      "Cloudinary",
+      "Multer",
+    ],
+    github: "https://github.com/jhapriyansh/socialmedia-app-backend",
+    live: "#",
+  },
+
+  {
+    title: "SimuCore – WebAssembly Orbital Visualizer",
+    type: "fe",
+    description:
+      "High-performance orbital visualizer using a multithreaded WebAssembly module compiled from C via Emscripten. Generates hydrogen-like orbital particle clouds and renders them interactively using React + Three.js.",
+    tech: [
+      "C",
+      "WebAssembly (WASM)",
+      "Emscripten",
+      "PThreads",
+      "JavaScript",
+      "React.js",
+      "Three.js",
+    ],
+    github: "https://github.com/jhapriyansh/simucore",
+    live: "https://simucore.netlify.app",
+  },
+
+  {
+    title: "StockSphere (Inventory & Billing System) – Frontend",
+    type: "fs",
+    description:
+      "Inventory and billing management frontend with role-based dashboards (Admin/Staff), product management, stock requests, billing interface, and structured UI components with CSS Modules.",
+    tech: [
+      "React.js",
+      "Vite",
+      "React Context",
+      "React Router",
+      "CSS Modules",
+      "Axios",
+    ],
+    github: "https://github.com/jhapriyansh/stocksphereims",
+    live: "#",
+  },
+
+  {
+    title: "StockSphere Backend",
+    type: "be",
+    description:
+      "Backend server for the StockSphere system with JWT auth, product and stock request APIs, bill generation endpoints, and MongoDB-based data models for users, products, and billing workflows.",
+    tech: ["Node.js", "Express.js", "MongoDB", "Mongoose", "JWT"],
+    github: "https://github.com/jhapriyansh/stocksphereims-be",
+    live: "#",
+  },
+
   {
     title: "Blogify",
     type: "fs",
     description:
-      "Full-stack blogging platform with a React front end and a RESTful API. Features user authentication, post management, comments, and likes.",
-    tech: ["React.js", "Vite", "Bootstrap", "Node.js", "Express.js", "MongoDB"],
+      "Full-stack blogging platform with user auth, post CRUD, comments, like system, and timestamped activity. Clean REST API and structured React/Vite frontend.",
+    tech: [
+      "React.js",
+      "Vite",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "Bootstrap",
+    ],
     github: "https://github.com/jhapriyansh/blogify",
-    live: "no deployment yet",
+    live: "#",
   },
+
+  {
+    title: "Todo Application (MERN)",
+    type: "fs",
+    description:
+      "Task management platform with JWT auth, task CRUD, filtering, and clean React UI. Includes Node/Express backend with MongoDB for persistent storage.",
+    tech: [
+      "React.js",
+      "Bootstrap",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+    ],
+    github: "https://github.com/jhapriyansh/todo-mern-app",
+    live: "#",
+  },
+
   {
     title: "React Hangman",
     type: "fe",
     description:
-      "A classic Hangman word-guessing game built with React. Features dynamic word generation, visual hangman drawing, and interactive keyboard input.",
-    tech: ["React.js", "TypeScript", "CSS", "vite"],
+      "Interactive Hangman puzzle game built with React and TypeScript featuring animated drawing stages and responsive UI.",
+    tech: ["React.js", "TypeScript", "CSS", "Vite"],
     github: "https://github.com/jhapriyansh/react-hangman",
     live: "https://react-hangman-delta.vercel.app/",
   },
+
   {
-    title: "Portfolio",
+    title: "Developer Portfolio",
     type: "fe",
     description:
-      "A modern and responsive developer portfolio built with Next.js and Tailwind CSS along with shadcn/ui components. Showcases projects, skills, and contact details with smooth animations and a super clean UI.",
+      "Modern developer portfolio built using Next.js, Tailwind CSS, and shadcn/ui. Features elegant animations, responsive layouts, and structured project/skills sections.",
     tech: ["Next.js", "Tailwind CSS", "shadcn/ui", "TypeScript"],
     github: "https://github.com/jhapriyansh/portfolio",
     live: "https://priyanshujha-portfolio.vercel.app/",
-  },
-  {
-    title: "StockSphere (Inventory & Billing System)",
-    type: "fs",
-    description:
-      "A full-stack inventory and billing management system with role-based workflows (Admin & Staff), real-time billing counter updates via WebSockets, and a QR-based mobile scanning workflow (PoC).",
-    tech: [
-      "React.js",
-      "Vite",
-      "CSS Modules",
-      "Context API",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "JWT",
-      "Socket.IO",
-    ],
-    github: "https://github.com/jhapriyansh/stocksphereims",
-    live: "#",
   },
 ];
 
