@@ -15,7 +15,7 @@ import { motion } from "framer-motion";
 const projects = [
   {
     title: "Social Media App (Frontend)",
-    type: "fs",
+    type: "fe",
     description:
       "Responsive social media frontend featuring authentication, profiles, a real-time chat system, posts, comments, likes, and activity feeds.",
     tech: [
@@ -68,7 +68,7 @@ const projects = [
   },
   {
     title: "StockSphere (Frontend)",
-    type: "fs",
+    type: "fe",
     description:
       "Inventory and billing management frontend with role-based dashboards, product management, stock requests, and billing flows.",
     tech: [
@@ -93,7 +93,7 @@ const projects = [
   },
   {
     title: "Blogify",
-    type: "fs",
+    type: "be",
     description:
       "Full-stack blogging platform with auth, post CRUD, comments, likes, and activity timelines.",
     tech: [
