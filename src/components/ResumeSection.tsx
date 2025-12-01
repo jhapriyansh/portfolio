@@ -1,30 +1,41 @@
 "use client";
+
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function ResumeSection() {
   return (
-    <section className="py-20 px-4">
+    <section id="resume" className="py-20 px-4">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-light mb-8">Resume</h2>
-        <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-          Download my resume to learn more about my experience and
-          qualifications.
-        </p>
-        <a
-          href="https://drive.google.com/file/d/1JeVfrKL_VtLY9O87wyi5j-WvdF8wIiIy/view?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
+        <motion.div
+          initial={{ opacity: 0, y: 14 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
         >
-          <Button
-            size="lg"
-            variant="outline"
-            className="hover:bg-gray-900 bg-white hover:text-white transition-colors hover:border-white border-2 border-gray-400"
+          <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-[#6EE7B7]">
+            Resume
+          </h2>
+          <p className="text-sm sm:text-base text-zinc-300 mb-8 leading-relaxed">
+            Want the full story? Download my resume for a detailed view of my
+            experience, projects, and skills.
+          </p>
+          <a
+            href="https://drive.google.com/file/d/1JeVfrKL_VtLY9O87wyi5j-WvdF8wIiIy/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <Download className="w-5 h-5 mr-2" />
-            Download Resume
-          </Button>
-        </a>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-[#6EE7B7]/70 bg-black text-[#6EE7B7] hover:bg-[#6EE7B7] hover:text-black hover:border-[#6EE7B7] transition-colors font-mono text-xs sm:text-sm shadow-[0_0_26px_rgba(110,231,183,0.35)]"
+            >
+              <Download className="w-4 h-4 mr-2" />
+              Download Resume
+            </Button>
+          </a>
+        </motion.div>
       </div>
     </section>
   );
