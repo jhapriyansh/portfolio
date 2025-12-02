@@ -34,12 +34,8 @@ A personal developer portfolio built using Next.js, TailwindCSS, Framer Motion, 
 ## Usage
 Open `http://localhost:3000` in your web browser to view the portfolio.
 
-## Build
-To build the portfolio for production, run:
-```bash
-pnpm run build
-pnpm start
-```
+## Configuration
+No specific configuration or environment variables are required to run this project.
 
 ## Contributing
 Contributions are welcome! To contribute, please fork the repository, make your changes, and submit a pull request.
