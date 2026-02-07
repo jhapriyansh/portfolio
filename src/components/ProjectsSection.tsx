@@ -14,135 +14,102 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Social Media App (Frontend)",
-    type: "fe",
+    title: "S-Core — Syllabus-Aware AI Study Companion",
+    type: "fs",
     description:
-      "Responsive social media frontend featuring authentication, profiles, a real-time chat system, posts, comments, likes, and activity feeds.",
+      "AI-powered study system enforcing strict syllabus boundaries using RAG, domain guards, and adaptive learning modes.",
     tech: [
-      "React.js",
+      "React",
       "Vite",
-      "Tailwind CSS",
-      "Axios",
-      "React Router",
-      "Socket.IO",
-      "Material UI Icons",
-      "React Toastify",
-    ],
-    github: "https://github.com/jhapriyansh/socialmedia-app",
-    live: "#",
-  },
-  {
-    title: "Social Media App (Backend)",
-    type: "be",
-    description:
-      "Scalable backend powering a full social media platform with JWT auth, user profiles, posts, comments, notifications, and real-time messaging.",
-    tech: [
-      "Node.js",
-      "Express.js",
+      "FastAPI",
+      "ChromaDB",
+      "ONNX Runtime",
+      "Sentence Transformers",
       "MongoDB",
-      "Mongoose",
-      "JWT",
-      "Socket.IO",
-      "Cloudinary",
-      "Multer",
+      "Groq LLaMA 3.3",
     ],
-    github: "https://github.com/jhapriyansh/socialmedia-app-backend",
+    github: "https://github.com/jhapriyansh/s-core-frontend",
     live: "#",
   },
+
   {
-    title: "SimuCore – WebAssembly Orbital Visualizer",
+    title: "RepoCraft — AI Repository Analysis Platform",
+    type: "fs",
+    description:
+      "AI platform that analyzes GitHub repositories to generate READMEs, resume bullets, and portfolio summaries.",
+    tech: [
+      "Next.js",
+      "FastAPI",
+      "GitHub OAuth",
+      "LLMs",
+      "Streaming Responses",
+      "MongoDB",
+    ],
+    github: "https://github.com/jhapriyansh/repocraft",
+    live: "https://repocraft-phi.vercel.app",
+  },
+
+  {
+    title: "SimuCore — WebAssembly Orbital Visualizer",
     type: "fe",
     description:
-      "High-performance orbital visualizer using a multithreaded WebAssembly module compiled from C via Emscripten, rendered with React + Three.js.",
+      "High-performance orbital visualization engine using multithreaded WebAssembly compiled from C and rendered with React + Three.js.",
     tech: [
       "C",
-      "WebAssembly (WASM)",
+      "WebAssembly",
       "Emscripten",
       "PThreads",
-      "JavaScript",
-      "React.js",
+      "React",
       "Three.js",
     ],
     github: "https://github.com/jhapriyansh/simucore",
     live: "https://simucore.netlify.app",
   },
+
   {
-    title: "StockSphere (Frontend)",
-    type: "fe",
+    title: "Social Media Platform",
+    type: "fs",
     description:
-      "Inventory and billing management frontend with role-based dashboards, product management, stock requests, and billing flows.",
+      "Full-featured social media platform with authentication, posts, real-time chat, notifications, and media handling.",
     tech: [
-      "React.js",
-      "Vite",
-      "React Context",
-      "React Router",
-      "CSS Modules",
-      "Axios",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "JWT",
+      "Socket.IO",
+      "Cloudinary",
+    ],
+    github: "https://github.com/jhapriyansh/socialmedia-app",
+    live: "#",
+  },
+
+  {
+    title: "StockSphere — Inventory Management System",
+    type: "fs",
+    description:
+      "Role-based inventory and billing system with product management, stock tracking, and invoice generation.",
+    tech: [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "JWT",
+      "RBAC",
     ],
     github: "https://github.com/jhapriyansh/stocksphereims",
     live: "#",
   },
-  {
-    title: "StockSphere Backend",
-    type: "be",
-    description:
-      "Backend for StockSphere with JWT auth, product and stock APIs, bill generation, and MongoDB models.",
-    tech: ["Node.js", "Express.js", "MongoDB", "Mongoose", "JWT"],
-    github: "https://github.com/jhapriyansh/stocksphereims-be",
-    live: "#",
-  },
-  {
-    title: "Blogify",
-    type: "be",
-    description:
-      "Full-stack blogging platform with auth, post CRUD, comments, likes, and activity timelines.",
-    tech: [
-      "React.js",
-      "Vite",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Mongoose",
-      "Bootstrap",
-    ],
-    github: "https://github.com/jhapriyansh/blogify",
-    live: "#",
-  },
-  {
-    title: "Todo Application (MERN)",
-    type: "fs",
-    description:
-      "Task management app with JWT auth, task CRUD, filtering, and a clean React UI backed by Node/Express and MongoDB.",
-    tech: [
-      "React.js",
-      "Bootstrap",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Mongoose",
-    ],
-    github: "https://github.com/jhapriyansh/todo-mern-app",
-    live: "#",
-  },
-  {
-    title: "React Hangman",
-    type: "fe",
-    description:
-      "Interactive Hangman puzzle game built with React and TypeScript with animated drawing stages.",
-    tech: ["React.js", "TypeScript", "CSS", "Vite"],
-    github: "https://github.com/jhapriyansh/react-hangman",
-    live: "https://react-hangman-delta.vercel.app/",
-  },
+
   {
     title: "Developer Portfolio",
     type: "fe",
     description:
-      "Modern developer portfolio built using Next.js, Tailwind CSS, and shadcn/ui.",
-    tech: ["Next.js", "Tailwind CSS", "shadcn/ui", "TypeScript"],
+      "Personal developer portfolio showcasing projects, experience, and technical focus areas.",
+    tech: ["Next.js", "Tailwind CSS", "TypeScript", "shadcn/ui"],
     github: "https://github.com/jhapriyansh/portfolio",
     live: "https://priyanshujha-portfolio.vercel.app/",
   },
 ];
+
 
 export default function ProjectsSection() {
   return (
